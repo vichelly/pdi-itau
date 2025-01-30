@@ -1,36 +1,24 @@
 "use client"
 
-import { useState } from "react"
+import { FormEventHandler, useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
-import { toast } from "@/hooks/use-toast"
 
 export default function FeedbackForm() {
   const [feedback, setFeedback] = useState("");
-  const [message, setMessage] = useState("");
 
-  const handleSubmit = async (e:any) => {
+  const handleSubmit:FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("/api/feedback", {
+    await fetch("/api/feedback", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ feedback }),
     });
-
-    const text = await res.text(); // Pegue a resposta como texto
-
-    try {
-      const data = JSON.parse(text); // Tente converter para JSON
-      setMessage(data.message || "Feedback enviado com sucesso!");
-    } catch (error) {
-      console.error("Erro ao processar resposta:", text);
-      setMessage("Erro inesperado ao enviar feedback.");
-    }
   };
 
   return (
