@@ -29,7 +29,7 @@ export default function FeedbackForm() {
       } else {
         throw new Error("Falha ao enviar feedback")
       }
-    } catch (error) {
+    } catch {
       setMessage({ type: "error", text: "Não foi possível enviar o feedback. Tente novamente mais tarde." })
     }
 
