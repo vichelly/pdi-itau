@@ -25,7 +25,7 @@ export default function Introduction() {
                 <ul className="space-y-2">
                   <li className="flex items-center">
                     <Gamepad2 className="mr-2 h-5 w-5 text-blue-600" />
-                    <span className="text-gray-700 dark:text-gray-300">Meus hobbies são jogar video game no PC.</span>
+                    <span className="text-gray-700 dark:text-gray-300">Amo jogar video game </span>
                   </li>
                   <li className="flex items-center">
                     <Film className="mr-2 h-5 w-5 text-blue-600" />

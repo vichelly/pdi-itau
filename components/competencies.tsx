@@ -8,15 +8,14 @@ export default function Competencies() {
         <div className="grid gap-6 md:grid-cols-2">
           <Card>
             <CardHeader>
-              <CardTitle>Competências Técnicas</CardTitle>
+              <CardTitle>Competências Técnicas em aperfeiçoamento</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="list-disc pl-5 space-y-2">
                 <li>Desenvolvimento Web (HTML, CSS, JavaScript)</li>
                 <li>React e Next.js</li>
+                <li>Angular</li>
                 <li>Node.js</li>
-                <li>AWS Cloud Services</li>
-                {/* Adicione mais competências conforme necessário */}
               </ul>
             </CardContent>
           </Card>
@@ -27,9 +26,9 @@ export default function Competencies() {
             <CardContent>
               <ul className="space-y-2">
                 <li>
-                  <strong>Graduação em [Seu Curso]</strong>
+                  <strong>Graduação em Ciência da Computação</strong>
                   <br />
-                  [Sua Universidade], [Ano de Conclusão]
+                  Fei, conclusão dez 2025
                 </li>
                 {/* Adicione mais formações se aplicável */}
               </ul>
@@ -42,8 +41,7 @@ export default function Competencies() {
           </CardHeader>
           <CardContent>
             <ul className="list-disc pl-5 space-y-2">
-              <li>[Nome da Certificação] - [Instituição], [Ano]</li>
-              {/* Adicione mais certificações conforme necessário */}
+              <li>Professional Scrum Product Owner™ I (PSPO I) - Scrum.org</li>
             </ul>
           </CardContent>
         </Card>
