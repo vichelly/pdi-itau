@@ -18,7 +18,7 @@ export default function SoftSkills() {
       title: "Resolução de Problemas Engenhosidade",
       description: "Desenvolver abordagens criativas para desafios complexos.",
       plan: [
-        "Resolver um problema complexo por semana usando técnicas de pensamento lateral",
+        "Resolver um problemas complexos",
         "Estudar casos de sucesso de inovação em outras empresas",
       ],
     }
