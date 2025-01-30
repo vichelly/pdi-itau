@@ -1,13 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle } from "lucide-react"
+import { CheckCircle, Briefcase } from "lucide-react"
 
 export default function DevelopmentPlan() {
   const steps = [
-    { title: "Fundamentos da AWS e Computação em Nuvem", duration: "Semana 1-2" },
-    { title: "Serviços principais da AWS (EC2, S3, RDS, etc.)", duration: "Semana 3-4" },
-    { title: "Segurança, Arquitetura e Preços da AWS", duration: "Semana 5-6" },
-    { title: "Revisão e prática com exames simulados", duration: "Semana 7-8" },
-    { title: "Revisão final e realização do exame", duration: "Semana 9-12" },
+    { title: "Certified - AWS practitioner", duration: "realizar curso voltado para a prova e simulados" },
+    { title: "", duration: "" },
   ]
 
   return (
@@ -16,13 +13,13 @@ export default function DevelopmentPlan() {
         <h2 className="text-3xl font-bold mb-8 text-center">Plano de Desenvolvimento Pessoal</h2>
         <Card>
           <CardHeader>
-            <CardTitle>Preparação para AWS Certified Cloud Practitioner</CardTitle>
+            <CardTitle className="flex"> <h2>Objetivo <span className="text-orange-500" >Ituber</span></h2> </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="mb-4">
-              Meu objetivo é obter a certificação AWS Certified Cloud Practitioner nos próximos 3 meses. Aqui está meu
-              plano de estudos:
+            <p className="mb-4 font-bold text-orange-500 flex items-center">
+            <Briefcase className="mr-2 h-5 w-5 text-blue-600" />efetivação 
             </p>
+            
             <div className="relative border-l border-gray-200 dark:border-gray-700 ml-3">
               {steps.map((step, index) => (
                 <div key={index} className="mb-10 ml-6">
@@ -38,10 +35,6 @@ export default function DevelopmentPlan() {
                 </div>
               ))}
             </div>
-            <p className="mt-4">
-              Recursos de estudo: Documentação oficial da AWS, cursos online (A Cloud Guru, AWS Skill Builder), práticas
-              hands-on com AWS Free Tier.
-            </p>
           </CardContent>
         </Card>
       </div>

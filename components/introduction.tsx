@@ -1,6 +1,7 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Gamepad2, Film, ShoppingBasketIcon as Basketball, Dumbbell } from 'lucide-react'
+import { Gamepad2, Film, ShoppingBasketIcon as Basketball, Dumbbell, Linkedin } from 'lucide-react'
 
 export default function Introduction() {
   return (
@@ -14,7 +15,7 @@ export default function Introduction() {
             <div className="w-48 h-48 relative rounded-full overflow-hidden border-4 border-orange-500 shadow-lg">
               <Image
                 src="/img/profile.jpg"
-                alt="Sua foto"
+                alt="Foto de Vitor Lucas Fujita Felício"
                 layout="fill"
                 objectFit="cover"
               />
@@ -25,7 +26,7 @@ export default function Introduction() {
                 <ul className="space-y-2">
                   <li className="flex items-center">
                     <Gamepad2 className="mr-2 h-5 w-5 text-blue-600" />
-                    <span className="text-gray-700 dark:text-gray-300">Amo jogar video game </span>
+                    <span className="text-gray-700 dark:text-gray-300">Amo jogar video game</span>
                   </li>
                   <li className="flex items-center">
                     <Film className="mr-2 h-5 w-5 text-blue-600" />
@@ -40,6 +41,17 @@ export default function Introduction() {
                     <span className="text-gray-700 dark:text-gray-300">Frequento a academia regularmente</span>
                   </li>
                 </ul>
+              </div>
+              <div className="pt-4">
+                <Link 
+                  href="https://www.linkedin.com/in/vitor-lucas-fujita-felício" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+                >
+                  <Linkedin className="mr-2 h-5 w-5" />
+                  Conecte-se no LinkedIn
+                </Link>
               </div>
             </div>
           </div>

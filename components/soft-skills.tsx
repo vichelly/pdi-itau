@@ -1,48 +1,27 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { MessageSquare, Users, Lightbulb, TrendingUp } from "lucide-react"
+import { MessageSquare, Lightbulb } from "lucide-react"
 
 export default function SoftSkills() {
   const skills = [
     {
       icon: MessageSquare,
-      title: "Comunicação",
+      title: "Comunicação e Sociabilidade",
       description: "Aprimorar habilidades de comunicação verbal e escrita.",
       plan: [
-        "Participar de um curso de oratória",
-        "Praticar apresentações técnicas mensalmente",
-        "Escrever artigos técnicos para o blog da empresa",
-      ],
-    },
-    {
-      icon: Users,
-      title: "Trabalho em Equipe",
-      description: "Fortalecer a capacidade de colaboração e liderança em projetos.",
-      plan: [
-        "Assumir papel de líder em um projeto interdepartamental",
-        "Organizar sessões de brainstorming mensais",
-        "Participar de um workshop sobre metodologias ágeis",
+        "Praticar fala em reuniões: dar opiniões, mesmo que sejam simples no começo.",
+        "Engajar em eventos da empresa",
+        "Colaboração sempre que possível"
       ],
     },
     {
       icon: Lightbulb,
-      title: "Resolução de Problemas",
+      title: "Resolução de Problemas Engenhosidade",
       description: "Desenvolver abordagens criativas para desafios complexos.",
       plan: [
         "Resolver um problema complexo por semana usando técnicas de pensamento lateral",
-        "Participar de hackathons internos ou externos",
         "Estudar casos de sucesso de inovação em outras empresas",
       ],
-    },
-    {
-      icon: TrendingUp,
-      title: "Adaptabilidade",
-      description: "Melhorar a capacidade de se adaptar a novas tecnologias e mudanças.",
-      plan: [
-        "Aprender uma nova tecnologia a cada trimestre",
-        "Participar de rotações de função dentro da empresa",
-        "Praticar mindfulness para aumentar a flexibilidade mental",
-      ],
-    },
+    }
   ]
 
   return (
