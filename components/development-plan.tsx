@@ -16,8 +16,8 @@ export default function DevelopmentPlan() {
             <CardTitle className="flex"> <h2>Objetivo <span className="text-orange-500" >Ituber</span></h2> </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="mb-4 font-bold text-orange-500 flex items-center">
-            <Briefcase className="mr-2 h-5 w-5 text-blue-600" />efetivação 
+            <p className="mb-4 font-bold text-blue-600 flex items-center">
+            <Briefcase className="mr-2 h-5 w-5 text-blue-600" />Efetivação como Engenheiro de Software
             </p>
             
             <div className="relative border-l border-gray-200 dark:border-gray-700 ml-3">
