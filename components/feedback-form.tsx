@@ -34,7 +34,7 @@ export default function FeedbackForm() {
     }
 
     // Clear the message after 3 seconds
-    setTimeout(() => setMessage(null), 3000)
+    setTimeout(() => setMessage(null), 1000)
   }
 
   return (
