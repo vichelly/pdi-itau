@@ -25,7 +25,7 @@ export default function FeedbackForm() {
 
       if (response.ok) {
         setFeedback("") // Clear the feedback
-        setMessage({ type: "success", text: "Feedback enviado. Obrigado por sua contribuição!" })
+        setMessage({ type: "success", text: "Feedback enviado. Obrigado por sua contribuição! " })
       } else {
         throw new Error("Falha ao enviar feedback")
       }
