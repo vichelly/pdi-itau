@@ -8,18 +8,30 @@ import { Button } from "@/components/ui/button"
 import { toast } from "@/hooks/use-toast"
 
 export default function FeedbackForm() {
-  const [feedback, setFeedback] = useState("")
+  const [feedback, setFeedback] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Here you would typically send the feedback to your backend
-    console.log("Feedback submitted:", feedback)
-    toast({
-      title: "Feedback enviado",
-      description: "Obrigado por sua contribuição!",
-    })
-    setFeedback("")
-  }
+  const handleSubmit = async (e:any) => {
+    e.preventDefault();
+
+    const res = await fetch("/api/feedback", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ feedback }),
+    });
+
+    const text = await res.text(); // Pegue a resposta como texto
+
+    try {
+      const data = JSON.parse(text); // Tente converter para JSON
+      setMessage(data.message || "Feedback enviado com sucesso!");
+    } catch (error) {
+      console.error("Erro ao processar resposta:", text);
+      setMessage("Erro inesperado ao enviar feedback.");
+    }
+  };
 
   return (
     <section className="py-12 px-4 md:px-6 lg:px-8">
