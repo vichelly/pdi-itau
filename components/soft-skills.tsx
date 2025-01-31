@@ -6,9 +6,9 @@ export default function SoftSkills() {
     {
       icon: MessageSquare,
       title: "Comunicação e Sociabilidade",
-      description: "Aprimorar habilidades de comunicação verbal e escrita.",
+      description: "Aprimorar habilidades de comunicação verbal e escrita",
       plan: [
-        "Praticar fala em reuniões: dar opiniões, mesmo que sejam simples no começo.",
+        "Praticar fala em reuniões: dar opiniões",
         "Engajar em eventos da empresa",
         "Colaboração sempre que possível"
       ],
@@ -16,7 +16,7 @@ export default function SoftSkills() {
     {
       icon: Lightbulb,
       title: "Resolução de Problemas Engenhosidade",
-      description: "Desenvolver abordagens criativas para desafios complexos.",
+      description: "Desenvolver abordagens criativas para desafios complexos",
       plan: [
         "Resolver um problemas complexos",
         "Estudar casos de sucesso de inovação em outras empresas",
