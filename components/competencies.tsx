@@ -43,6 +43,9 @@ export default function Competencies() {
             <ul className="list-disc pl-5 space-y-2">
               <li>Professional Scrum Product Owner™ I (PSPO I) - Scrum.org</li>
             </ul>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Practitioner Generative AI - Itaú Unibanco</li>
+            </ul>
           </CardContent>
         </Card>
       </div>
